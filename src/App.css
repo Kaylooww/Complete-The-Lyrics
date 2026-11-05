@@ -1,0 +1,32 @@
+﻿.lyrics-app { display: flex; flex-direction: column; width: min(906px, calc(100% - 32px)); margin: 26px auto 40px; }
+h1 { margin: 0 0 23px; text-align: center; font-size: 32px; line-height: 38px; font-weight: 700; }
+h1 a { color: inherit; text-decoration: none; }
+.singer-nav { display: flex; margin: 0 17px; }
+.singer-link { display: flex; flex: 1; min-height: 63px; align-items: center; justify-content: center; border: 1px solid #b2b2b2; color: #fff; font-size: 14px; text-decoration: none; text-transform: uppercase; }
+.singer-link + .singer-link { border-left: 0; }
+.singer-link.active { box-shadow: inset 0 -4px 0 rgba(0, 0, 0, .22); }
+.singer-link:hover { filter: brightness(.96); }
+a:focus-visible { outline: 2px solid #075bc7; outline-offset: 3px; }
+.singer-form { display: contents; }
+.singer-form input { display: block; width: calc(100% - 88px); margin: 10px auto 0; height: 58px; border: 2px solid #ddd; border-radius: 17px; padding: 3px; font-size: 13px; color: #000; background: #fff; }
+.singer-form input:focus { outline: 2px solid #0865ca; outline-offset: -1px; }
+.singer-details { order: 2; margin: 16px 37px 0; display: flex; justify-content: space-between; gap: 16px; color: #666; font-size: 12px; line-height: 18px; }
+.singer-details a { color: #555; }
+.lyrics-board { order: 1; min-height: 406px; margin-top: 21px; padding: 30px 35px; border: 3px solid #e1e1e1; border-radius: 16px; }
+.singer-form + .lyrics-board { margin-top: 30px; }
+.lyric-line { margin: 0 0 5px; min-height: 41px; padding: 11px 10px; border-radius: 10px; color: white; font-size: 16px; line-height: 19px; overflow-wrap: anywhere; white-space: pre-wrap; }
+.not-found { margin: 25px 17px; text-align: center; }
+.not-found h2 { font-size: 24px; }
+.not-found p { line-height: 1.5; }
+.not-found a { color: #075bc7; }
+@media (max-width: 600px) {
+  .lyrics-app { margin-top: 24px; }
+  h1 { font-size: 28px; }
+  .singer-nav { margin: 0; }
+  .singer-link { font-size: 11px; padding: 10px 6px; text-align: center; }
+  .singer-form input { width: calc(100% - 24px); }
+  .lyrics-board { padding: 24px 16px; }
+  .singer-details { margin: 16px 12px 0; }
+}
+
+
